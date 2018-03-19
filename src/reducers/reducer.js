@@ -13,13 +13,14 @@ const reducer = (state=initialState, action) => {
       ...state,
       username: action.username
       }
+    break;
     case 'UPDATE_USERPROFILE':
       return {
         ...state,
         userprofile: action.userprofile
       }
     break;
-    case 'UPDATE_REPO':
+    case 'UPDATE_REPOS':
     return {
       ...state,
       repos: action.repos
